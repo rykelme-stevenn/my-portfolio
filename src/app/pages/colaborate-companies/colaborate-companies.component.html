@@ -1,0 +1,45 @@
+<div id="body-companies">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+            <div id="container-company">
+                <h1 style="color:#141c3a;margin-bottom: 6%;">Eu sou muito grato por ter colaborados nessas incríveis
+                    empresas:</h1>
+                <div style="width: 100%; text-align: center; margin-top: 32px !important;">
+
+                    @if (!detectar_mobile()) {
+                    <div id="card-container-company">
+                        @for (company of companies; track company.name) {
+                        <div id="card-company">
+                            <div style="display: flex;">
+                                <img id="company-image" [src]="company.source" alt="">
+                                <p style="font-weight: 500; font-size: 1.2rem;">{{company.name}}</p>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                    }
+
+                    @if (detectar_mobile()) {
+                        <div style="display: flex; justify-content: center;">
+                            <div id="card-container-company-mobile">
+
+                                @for (company of companies; track company.name;) {
+                                    <div  id="card-company">
+                                        <img id="company-image-mobile" [src]="company.source" alt="">
+                                        <p style="font-weight: 500; font-size: 1.2rem; line-height: normal;">{{company.name}}
+                                        </p>
+                                        @if (company.name == 'Connect') {
+                                            <br >
+                                        }
+                                    </div> 
+                                }
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

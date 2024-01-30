@@ -1,0 +1,94 @@
+#footer {
+    margin-top: 10px;
+    height: 350px;
+    background-color: #59D69A;
+    text-align: center;
+    padding: 26px;
+}
+
+@media screen and (min-width: 1113px) {
+    #footer {
+        margin-top: 10px;
+        height: 35vh;
+        background-color: #59D69A;
+        text-align: center;
+        padding: 26px;
+    }
+}
+
+#image-footer {
+    width: 120px;
+    height: auto;
+}
+
+#slogan {
+    color: rgba(255, 255, 255, 0.856);
+    padding: 24px;
+}
+
+.iconbrand {
+    height: 65%;
+    width: 65%;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.button {
+    border-radius: 100%;
+    border: white solid 0.5px;
+    background-color: #59d69a00;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button:hover {
+    background-color: white;
+    color: #59D69A;
+    cursor: pointer;
+
+}
+
+.link {
+    color: white;
+}
+
+.link:hover {
+    color: #59D69A;
+}
+
+#ending {
+    text-align: center;
+    background-color: #59D69A;
+}
+
+#content-ending {
+    border-top: 2px rgba(0, 0, 0, 0.048) solid;
+    padding: 18px;
+}
+
+#made {
+    color: rgba(255, 255, 255, 0.856);
+    margin: 0px;
+}
+
+#year {
+    color: rgba(255, 255, 255, 0.856);
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#angular-icon {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+#angular-text {
+    color: rgba(255, 255, 255, 0.856);
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}

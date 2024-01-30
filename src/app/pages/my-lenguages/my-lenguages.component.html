@@ -1,0 +1,29 @@
+<div style="display: flex; justify-content: center;">
+    <div id="card">
+        <img src="../../../assets/images/code.svg" id="icon-code" alt="">
+        <h2 id="title-front">Frontend developer</h2>
+        <p class="describe-front">Eu gosto muito de codificar novas features, porém, corrigir bugs faz parte do caminho.
+        </p>
+
+        <p id="second-title">Tecnologias que eu utilizo:</p>
+
+        <div class="card-container-tecnology">
+            @for (item of tecnologies; track item.name) {
+            <div class="card-tecnology">
+                <h3 id="title-tecnology">{{item.name}}</h3>
+                <img class="logo-tecnology" [src]="item.source" alt="">
+            </div>
+            }
+        </div>
+
+        <br>
+        <div>
+            <p id="second-title">Ferramentas de desenvolvimento: </p>
+            @for (i of devTools; track i) {
+            <div>
+                <p id="dev-tools">{{i}}</p>
+            </div>
+            }
+        </div>
+    </div>
+</div>

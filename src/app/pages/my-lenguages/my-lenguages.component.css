@@ -1,0 +1,91 @@
+
+
+#card{
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    background-color: white;
+    width: 60vw;
+    border-radius: 10px;
+    border: 0.1rem #59d69a48 solid;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#icon-code{
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+#title-front{
+    margin-top: 16px;
+    line-height: normal;
+    font-size: 1.5rem;
+    color: #141c3a;
+}
+
+.describe-front{
+    margin-top: 12px;
+    line-height: normal;
+    font-size: 18px;
+    color: #141c3a;
+}
+
+.describe-tecnologies{
+    margin-top: 20px;
+    line-height: normal;
+    font-size: 18px;
+    color: #141c3a;
+}
+
+#second-title{
+    color: #59D69A;
+    line-height: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 16px !important;
+}
+
+.card-container-tecnology {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 3 colunas com tamanhos iguais */
+    grid-gap: 10px;
+}
+
+@media screen and (min-width: 1113px) {
+    .card-container-tecnology {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Define 3 colunas com tamanhos iguais */
+        grid-gap: 10px; /* Espaço entre os elementos, ajuste conforme necessário */
+    }
+  }
+
+.card-tecnology {
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border: 0.1rem #59d69a48 solid;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.card-tecnology:hover{
+    border: 0.1rem #59d69ac5 solid;
+    background-color: #59d69a4b;
+}
+
+.logo-tecnology{
+    width: 65px;
+    height: auto;
+}
+
+#title-tecnology{
+    line-height: normal;
+}
+
+#dev-tools{
+    font-size: 1.2rem;
+    font-weight: 400;
+}

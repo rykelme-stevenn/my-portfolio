@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+#background{
+    margin: 0px;
+    width: 100vw;
+}
+h1, h2, h3, h4, p{
+    font-family: 'Signika', sans-serif;
+    color: #141c3a;
+    line-height: normal;
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    overflow-x: hidden; 
+}

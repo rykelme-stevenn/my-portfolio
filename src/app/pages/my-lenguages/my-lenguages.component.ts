@@ -11,28 +11,28 @@ export class MyLenguagesComponent {
   tecnologies = [
     {
       name: "HTML",
-      source: "../../../assets/images/HTML.svg"
+      source: "/src/assets/images/HTML.svg"
     },
     {
       name: "CSS",
-      source: "../../../assets/images/CSS.svg"
+      source: "/src/assets/images/CSS.svg"
     },
 
     {
       name: "Typescript",
-      source: "../../../assets/images/Typescript.svg"
+      source: "/src/assets/images/Typescript.svg"
     },
     {
       name: "Angular",
-      source: "../../../assets/images/Angular.svg"
+      source: "/src/assets/images/Angular.svg"
     },
     {
       name: "React Native",
-      source: "../../../assets/images/React Native.svg"
+      source: "/src/assets/images/React Native.svg"
     },
     {
       name: "React",
-      source: "../../../assets/images/React.svg"
+      source: "/src/assets/images/React.svg"
     },
   ]
   

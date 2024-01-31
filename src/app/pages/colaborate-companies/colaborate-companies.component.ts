@@ -10,19 +10,19 @@ export class ColaborateCompaniesComponent {
   companies = [
     {
       name: 'Linx',
-      source: '../../../assets/images/Linx.jpeg'
+      source: '/src/assets/images/Linx.jpeg'
     },
     {
       name: 'UseCash',
-      source: '../../../assets/images/UseCash.jpeg'
+      source: '/src/assets/images/UseCash.jpeg'
     },
     {
       name: 'Select',
-      source: '../../../assets/images/company.svg'
+      source: '/src/assets/images/company.svg'
     },
     {
       name: 'Connect',
-      source: '../../../assets/images/Connect Parts.jpeg'
+      source: '/src/assets/images/Connect Parts.jpeg'
     },
 
   ]

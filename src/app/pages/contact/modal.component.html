@@ -1,0 +1,153 @@
+<style>
+    @media screen and (min-width: 1113px) {
+        .card {
+            height: auto;
+            margin-right: 16px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .button-submit {
+            width: 100%;
+            height: 40px;
+            background-color: #59d69a;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .close {
+            justify-content: flex-end;
+            display: flex;
+        }
+
+        .sendmail {
+            width: 50%;
+        }
+
+        .content{
+            display: flex;
+        }
+
+    }
+/* --------------------------------------------- */
+
+    mat-form-field {
+        width: 100%
+    }
+
+    .card {
+        height: auto;
+        margin-right: 16px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .card :hover {
+        cursor: pointer;
+    }
+
+    a :hover::before {
+        background-color: #59d69a;
+    }
+
+    mat-tooltip {
+        background-color: #59d69a;
+        color: #333;
+        border-radius: 6px;
+        /* Adicione outros estilos conforme necessário */
+    }
+
+    .button-submit {
+        width: 100%;
+        height: 40px;
+        background-color: #59d69a;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .button-submit:hover {
+        cursor: pointer;
+        background-color: #59d69aae;
+    }
+
+    .close {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .close :hover {
+        cursor: pointer;
+    }
+</style>
+
+
+<div mat-dialog-content>
+    <div class="close" (click)="close()">
+        <ng-icon name="bootstrapXSquareFill" class="iconbrand" size="32px" color="black"></ng-icon>
+    </div>
+    <div class="content" >
+        <div class="sendmail">
+            <h1 mat-dialog-title style="padding-left: 0px;">Fale comigo</h1>
+
+            <mat-form-field color="primary" floatLabel="always" class="example-full-width">
+                <mat-label>Nome*</mat-label>
+                <input matInput [(ngModel)]="name" class="custom-input-color">
+            </mat-form-field>
+
+            <mat-form-field color="primary" floatLabel="always" class="example-full-width">
+                <mat-label>E-mail</mat-label>
+                <input matInput [(ngModel)]="email" class="custom-input-color">
+            </mat-form-field>
+
+            <mat-form-field color="primary" floatLabel="always" class="example-full-width">
+                <mat-label>Assunto</mat-label>
+                <input matInput [(ngModel)]="subject" class="custom-input-color">
+            </mat-form-field>
+
+            <mat-form-field color="primary" floatLabel="always" class="example-full-width">
+                <mat-label>Mensagem*</mat-label>
+                <input matInput [(ngModel)]="message" class="custom-input-color">
+            </mat-form-field>
+
+            <div>
+                <button class="button-submit" (click)="enviteEmail()" [disabled]="loading">
+                    @if (loading === true) {
+                    <mat-spinner [diameter]="25" color="primary"></mat-spinner>
+                    }@else {
+                    Enviar
+                    }
+                </button>
+            </div>
+        </div>
+        <div style="margin-left: 16px;">
+            <h1 mat-dialog-title style="padding-left: 0px;">Ou se preferir</h1>
+            <p>Caso queira conversar por alguma plataforma específica ou tirar alguma dúvida, estarei sempre à
+                disposição. Veja abaixo algumas plataformas que podem te ajudar:</p>
+
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
+
+                <a matTooltip="Linkedin" class="card" [style]="isMobile ? '30%' : '8%'" href="https://www.linkedin.com/in/rykelme-prado/">
+                    <ng-icon name="bootstrapLinkedin" class="iconbrand" [size]="isMobile ? '44px' : '38px'" color="black"></ng-icon>
+                </a>
+                <a class="card" matTooltip="Github" [style]="isMobile ? '30%' : '8%'" href="https://github.com/rykelme-stevenn">
+                    <ng-icon name="bootstrapGithub" class="iconbrand" [size]="isMobile ? '44px' : '38px'" color="black"></ng-icon>
+                </a>
+                <a matTooltip="E-mail" class="card" [style]="isMobile ? '30%' : '8%'" (click)="openEmail()">
+                    <ng-icon name="bootstrapEnvelopeAtFill" class="iconbrand" [size]="isMobile ? '44px' : '38px'" color="black"></ng-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

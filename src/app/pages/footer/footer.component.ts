@@ -2,6 +2,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { Component } from '@angular/core';
 import { EmailService } from '../../services/email-provide.service';
 import {bootstrapGithub, bootstrapLinkedin, bootstrapEnvelopeAtFill} from '@ng-icons/bootstrap-icons'
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @Component({
@@ -9,7 +10,7 @@ import {bootstrapGithub, bootstrapLinkedin, bootstrapEnvelopeAtFill} from '@ng-i
   standalone: true,
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
-  imports: [NgIconComponent],
+  imports: [NgIconComponent, MatTooltipModule],
   viewProviders: [provideIcons({ bootstrapGithub, bootstrapLinkedin, bootstrapEnvelopeAtFill })]
 })
 export class FooterComponent {

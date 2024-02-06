@@ -1,17 +1,4 @@
 
-
-#card{
-    color: #fff;
-    text-align: center;
-    line-height: normal;
-    background-color: white;
-    width: 60vw;
-    border-radius: 10px;
-    border: 0.1rem #59d69a48 solid;
-    padding: 16px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
 #icon-code{
     width: 65px;
     height: 65px;
@@ -58,6 +45,31 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Define 3 colunas com tamanhos iguais */
         grid-gap: 10px; /* Espaço entre os elementos, ajuste conforme necessário */
+    }
+    #card{
+        color: #fff;
+        text-align: center;
+        line-height: normal;
+        background-color: white;
+        width: 60vw;
+        border-radius: 10px;
+        border: 0.1rem #59d69a48 solid;
+        padding: 16px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+  }
+
+  @media screen and (max-width: 1112px) {
+    #card{
+        color: #fff;
+        text-align: center;
+        line-height: normal;
+        background-color: white;
+        width: 100vw;
+        border-radius: 10px;
+        border: 0.1rem #59d69a48 solid;
+        padding: 16px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
   }
 

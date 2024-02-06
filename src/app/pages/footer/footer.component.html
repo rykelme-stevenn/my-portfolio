@@ -2,18 +2,18 @@
     <img id="image-footer" src="/src/assets/images/logo_pretty.png" alt="">
     <h1 id="slogan">Sempre em busca de desafios</h1>
     <div id="icons" style="display: flex; justify-content: center;">
-        <a class="link" style="text-decoration: none;" href="https://www.linkedin.com/in/rykelme-prado/"
+        <a matTooltip="Linkedin" class="link" style="text-decoration: none;" href="https://www.linkedin.com/in/rykelme-prado/"
             target="_blank">
             <button class="button">
                 <ng-icon name="bootstrapLinkedin" class="iconbrand" size="100%"></ng-icon>
             </button>
         </a>
-        <a class="link" style="text-decoration: none;" href="https://github.com/rykelme-stevenn" target="_blank">
+        <a matTooltip="Github" class="link" style="text-decoration: none;" href="https://github.com/rykelme-stevenn" target="_blank">
             <button class="button">
                 <ng-icon name="bootstrapGithub" class="iconbrand" size="100%"></ng-icon>
             </button>
         </a>
-        <button class="button" (click)="openEmail()">
+        <button matTooltip="E-mail" class="button" (click)="openEmail()">
             <ng-icon name="bootstrapEnvelopeAtFill" class="iconbrand" size="100%"></ng-icon>
         </button>
     </div>
